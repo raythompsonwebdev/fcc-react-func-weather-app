@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+
+    max-width:100%;
+    height:auto;
+    font-family: 'PT Sans', arial , sans-serif;
+
+}
+
+#container{
+
+    display:block;
+    width:85%;
+    margin:auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color:rgb(69, 69, 71);
+    padding:1em;
+    border-radius:10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+h1{
+    display:block;
+    line-height:40px;
+    text-align:center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-color:rgb(40, 40, 41);
+    width: 100%;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px #000;
+    font-size:1.3em;
+}
+
+h2{
+    display:block;
+    line-height:70px;
+    text-align:center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px #000;
+    font-size:1.2em;
+}
+
+.weatherbox{
+    display:inline-block;
+    width:100%;
+    height:auto;
+    min-height:70px;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    background-color:rgb(40, 40, 41);
+
+}
+
+span:first-of-type{
+    text-align:center;
+}
+.weatherbox p{
+    font-size:1em;
+    color:#fff;
+    text-align:center;    
+    width:100%;
+    text-transform: uppercase;
+    text-shadow:1px 1px #000;
+    letter-spacing:0.05em;
+}
+
+.weatherbox img{
+    display:block;
+    margin:1.5em auto;
+}
+
+button#tempbtn{
+
+    display:block;
+    width:100%;
+    line-height:50px;
+    height:auto;
+    font-size:1.3em;
+    outline:none;
+    border:none;
+    background-color:rgb(40, 40, 41);
+    margin:1em auto;
+    color:#fff;
+}
+
+button#tempbtn:hover{
+    cursor:pointer;
+    background-color:rgb(78, 74, 102);
+}
+
+@media only screen and (min-width: 90em){
+    #container{
+        width:50%;        
+    }
+    
+    h1{
+        line-height:60px;
+        font-size:1.5em;
+    }
+    
+    h2{
+        line-height:80px;
+        font-size:1.4em;
+    }
+    
+    .weatherbox{
+        min-height:80px;    
+    }
+    
+    span:first-of-type{
+        text-align:center;
+    }
+    .weatherbox p{
+        font-size:1.3em;
+
+    }
+    
+    .weatherbox img{
+        margin:1.5em auto;
+    }
+    
+    button#tempbtn{
+        line-height:60px;
+        font-size:1.5em;
+
+    }    
+    
+}
+
+@media only screen and (min-width: 64em) and (max-width: 1439px){
+    #container{
+        width:60%;        
+    }
+    
+    h1{
+        line-height:60px;
+        font-size:1.4em;
+    }
+    
+    h2{
+        line-height:80px;
+        font-size:1.4em;
+    }
+    
+    .weatherbox{
+        min-height:80px;    
+    }
+    
+    span:first-of-type{
+        text-align:center;
+    }
+    .weatherbox p{
+        font-size:1.3em;
+
+    }
+    
+    .weatherbox img{
+        margin:1.5em auto;
+    }
+    
+    button#tempbtn{
+        line-height:60px;
+        font-size:1.5em;
+
+    }    
+    
+}
+
+@media only screen and (min-width: 46em) and (max-width: 1023px){
+    #container{
+        width:70%;        
+    }
+    
+    h1{
+        line-height:50px;
+        font-size:1.35em;
+    }
+    
+    h2{
+        line-height:70px;
+        font-size:1.3em;
+    }
+    
+    .weatherbox{
+        min-height:70px;    
+    }
+    
+    span:first-of-type{
+        text-align:center;
+    }
+    .weatherbox p{
+        font-size:1.2em;
+
+    }
+    
+    .weatherbox img{
+        margin:1.5em auto;
+    }
+    
+    button#tempbtn{
+        line-height:55px;
+        font-size:1.4em;
+
+    }    
+    
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 735px){
+    #container{
+        width:75%;        
+    }
+    
+    h1{
+        line-height:40px;
+        font-size:1.35em;
+    }
+    
+    h2{
+        line-height:70px;
+        font-size:1.3em;
+    }
+    
+    .weatherbox{
+        min-height:70px;    
+    }
+    
+    span:first-of-type{
+        text-align:center;
+    }
+    .weatherbox p{
+        font-size:1.15em;
+
+    }
+    
+    .weatherbox img{
+        margin:1.5em auto;
+    }
+    
+    button#tempbtn{
+        line-height:50px;
+        font-size:1.4em;
+
+    }    
+    
+}
+
+@media only screen and (min-width: 22.5em) and (max-width: 599px){
+    #container{
+        width:85%;
+        
+    }
+    
+    h1{
+        line-height:40px;
+        font-size:1.35em;
+    }
+    
+    h2{
+        line-height:70px;
+        font-size:1.2em;
+    }
+    
+    .weatherbox{
+        min-height:70px;    
+    }
+    
+    span:first-of-type{
+        text-align:center;
+    }
+    .weatherbox p{
+        font-size:1.1em;
+
+    }
+    
+    .weatherbox img{
+        margin:1.5em auto;
+    }
+    
+    button#tempbtn{
+        line-height:50px;
+        font-size:1.4em;
+
+    }    
+    
+}
